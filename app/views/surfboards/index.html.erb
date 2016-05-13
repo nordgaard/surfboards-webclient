@@ -1,0 +1,16 @@
++<table>
+   <tr>
+     <th>Board Name</th>
+     <th>Feet</th>
+     <th>Inches</th>
+     <th>Color</th>
+   </tr>
+   <% @surfboards.each do |surfboard| %>
+   <tr>
+     <td><%= surfboard["name"] %></td>
+     <td><%= employee["feet"] %></td>
+     <td><%= employee["inches"] %></td>
+     <td><%= employee["color"] %></td>
+   </tr>
+   <% end %>
+ </table>
