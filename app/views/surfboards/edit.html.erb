@@ -1,0 +1,27 @@
+<h1>Edit A Surfboard</h1>
+
+<%= form_tag "/surfboards#{@surfboard['id']}", method: :patch do  %>
+
+<div>
+  <%= label_tage :name %>
+  <%= tet_field_tag :name, @surfboard["name"] %>
+</div>
+
+<div>
+  <%= label_tage :feet %>
+  <%= tet_field_tag :feet, @surfboard["feet"] %>
+</div>
+
+<div>
+  <%= label_tage :inches %>
+  <%= tet_field_tag :inches, @surfboard["inches"] %>
+</div>
+
+<div>
+  <%= label_tage :color %>
+  <%= tet_field_tag :feet, @surfboard["color"] %>
+</div>
+
+<%= submit_tag "Edit Surfboard" %>
+
+<% end %>

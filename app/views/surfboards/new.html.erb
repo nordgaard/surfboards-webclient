@@ -1,25 +1,27 @@
 <h1>Create New Surfboard</h1>
 
-<%= form_tage "/surfboards" do  %>
+<%= form_tag "/surfboards" do  %>
 
 <div>
-<%= label_tage :name %>
-<%= tet_field_tag :name %>
+  <%= label_tag :name %>
+  <%= text_field_tag :name %>
 </div>
 
 <div>
-<%= label_tage :feet %>
-<%= tet_field_tag :feet %>
+  <%= label_tag :feet %>
+  <%= text_field_tag :feet %>
 </div>
 
 <div>
-<%= label_tage :inches %>
-<%= tet_field_tag :inches %>
+  <%= label_tag :inches %>
+  <%= text_field_tag :inches %>
 </div>
 
 <div>
-<%= label_tage :color %>
-<%= tet_field_tag :feet %>
+  <%= label_tag :color %>
+  <%= text_field_tag :feet %>
 </div>
+
+<%= submit_tag "Create Surfboard" %>
 
 <% end %>
