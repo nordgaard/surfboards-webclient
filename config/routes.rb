@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   get '/surfboards/new', to: 'surfboards#new'
   get '/surfboards/:id', to: 'surfboards#show'
   post '/surfboards', to: 'surfboards#create'
-  
   get '/surfboards/:', to: 'surfboards#edit'
   patch '/surfboards/:id/edit', to: 'surfboards#update'
   delete '/surfboards/:id', to: 'surfboards#destroy'
